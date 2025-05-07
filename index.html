@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Receitas Inteligentes</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🍽️ Receitas Inteligentes</h1>
+      <p>Descubra o que cozinhar com os ingredientes que você tem em casa!</p>
+    </header>
+
+    <main>
+      <input
+        type="text"
+        id="ingredients"
+        placeholder="Digite os ingredientes separados por vírgula"
+      />
+      <button onclick="findRecipe()">Buscar Receita</button>
+
+      <div id="recipe-results" class="results-container"></div>
+    </main>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
