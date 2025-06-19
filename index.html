@@ -1,30 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Receitas Inteligentes</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas com Ingredientes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-  <div class="app-container">
-    <header>
-      <h1>🍽️ Receitas Inteligentes</h1>
-      <p>Descubra o que cozinhar com os ingredientes que você tem em casa!</p>
-    </header>
+  <div class="navbar">
+    <div class="logo">Minhas Receitas</div>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#buscar">Buscar</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </div>
 
-    <main>
-      <input
-        type="text"
-        id="ingredients"
-        placeholder="Digite os ingredientes separados por vírgula"
-      />
-      <button onclick="findRecipe()">Buscar Receita</button>
+  <div class="container" id="inicio">
+    <img src="assets/images/folha1.svg" class="decorative-leaf leaf-top-left" alt="Folha decorativa">
+    <img src="assets/images/folha2.svg" class="decorative-leaf leaf-bottom-right" alt="Folha decorativa">
 
-      <div id="recipe-results" class="results-container"></div>
-    </main>
+    <div class="header">
+      <h1>Descubra Receitas</h1>
+      <p>Digite os ingredientes que você tem em casa e veja o que pode cozinhar!</p>
+    </div>
+
+    <div class="quote-box">
+      “Cozinhar é como pintar ou escrever uma música: assim como há tantas notas ou cores, há tantos sabores — é como você combina que torna tudo mágico.”
+    </div>
+
+    <section class="search-section" id="buscar">
+      <input type="text" id="ingredients" placeholder="Ex: arroz, frango, tomate" />
+      <button onclick="findRecipe()">
+        <i class="fas fa-search"></i> Buscar Receitas
+      </button>
+    </section>
+
+    <div id="recipe-results" class="results"></div>
+
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Este site foi desenvolvido para ajudar você a aproveitar ao máximo os ingredientes disponíveis em casa, utilizando a API do Spoonacular para sugerir receitas práticas e criativas.</p>
+    </section>
+
+    <div class="footer">
+      Feito com <span class="heart">❤</span> para facilitar sua vida na cozinha.
+    </div>
   </div>
 
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>

@@ -41,3 +41,5 @@ async function findRecipe() {
     document.getElementById("recipe-results").innerHTML = "<p>Erro ao buscar receitas. Verifique sua API Key.</p>";
   }
 }
+
+
