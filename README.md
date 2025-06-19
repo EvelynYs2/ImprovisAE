@@ -71,6 +71,6 @@ Destinado a qualquer pessoa interessada em:
 
 ## 📄 Licença
 
-Este projeto é de caráter educacional, desenvolvido para fins acadêmicos pela Unisul – Universidade do Sul de Santa Catarina.
+..
 
 ---
